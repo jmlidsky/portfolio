@@ -22,6 +22,8 @@ header {
   top: 0;
   padding: 15px;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: fixed;
   background-color: white;
   box-shadow: 0px 3px 13px #7d7d7d;
@@ -31,9 +33,15 @@ h1 {
   color: #51797B;
 }
 
+h1, nav {
+  text-align: center;
+}
+
 nav ul {
   list-style-type: none;
   text-transform: lowercase;
+  display: inline-block;
+  text-align: center;
 }
 
 nav ul li {
@@ -59,7 +67,11 @@ nav ul li a:hover {
   background-attachment: fixed;
   width: 100%;
   height: 100vh;
+  padding-top: 3%;
+  padding-bottom: 3%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -79,8 +91,8 @@ section:nth-child(odd){
 
 .about-me, .skills, .projects, .connect {
   width: 100%;
-  /* padding: 20px 18%; */
   border-bottom: 1px solid #ddd;
+  padding: 20px 8%; 
 }
 
 h3{
@@ -105,6 +117,8 @@ h3{
 .skills-container {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
 .skills-image {
@@ -114,8 +128,9 @@ h3{
 /* Projects */
 .project-container {
   padding: 10px;
-  display: flex;
   border: 1px solid #e6e6e6;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-image-wrapper img {
@@ -158,7 +173,7 @@ p.project-skills {
 
 /* Connect */
 .connect h3 {
-  padding-top: 10px;
+  display: none;
 }
 
 .connect-info {
@@ -176,48 +191,6 @@ p.project-skills {
 }
 
 
-
-@media only screen and (min-width: 320px) {
-  /* Header & Nav */
-  header {
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  h1, nav {
-    text-align: center;
-  }
-
-  nav ul {
-    display: inline-block;
-    text-align: center;
-  }
-
-  /* Hero Image & Headline */ 
-  .hero-img {
-    padding-top: 3%;
-    padding-bottom: 3%;
-    align-items: center; 
-    justify-content: center;
-  }
-
-  /* Sections */
-  .about-me, .skills, .projects, .connect {
-    padding: 20px 8%;
-  }
-
-  /* Skills */
-  .skills-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-  }
-
-  /* Projects */
-  .project-container {
-    flex-direction: column;
-  }
-}
 
 @media only screen and (min-width: 768px) {
   /* Header & Nav */
