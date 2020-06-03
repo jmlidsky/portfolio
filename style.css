@@ -151,8 +151,9 @@ h3{
   color: white;
   background-color: #3D4751;
   margin-top: 10px;
-  padding: 8px;
-  width: 64px;
+  padding: 8px 16px;
+  /* width: 64px; */
+  height: 30px;
   font-size: 12px;
   text-transform: lowercase;
   text-decoration: none;
